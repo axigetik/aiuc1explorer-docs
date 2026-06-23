@@ -16,11 +16,15 @@ h3{font-size:1rem;margin:1.2rem 0 .3rem}
 .tag.band-mid{background:#fff3df;color:var(--warn);border-color:#f1d9a8}
 .tag.band-low{background:#fde7e7;color:var(--bad);border-color:#f5c2c2}
 table{border-collapse:collapse;width:100%;margin:.4rem 0 1.2rem;font-size:.92rem}
+table.reqtable{table-layout:fixed}
+table.reqtable td,table.reqtable th{word-wrap:break-word;overflow-wrap:break-word}
 th,td{border-bottom:1px solid var(--bd);padding:.4rem .5rem;text-align:left;vertical-align:top}
 th{background:#f6f6fa;font-weight:600}
 td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+table.center td,table.center th{text-align:center}
+table.center td{font-variant-numeric:tabular-nums}
 td code{background:#f1f1f6;padding:1px 4px;border-radius:3px}
-nav{margin:.5rem 0 1rem;display:flex;flex-wrap:wrap;gap:.5rem}
+nav{margin:.5rem 0 1rem}
 nav a{display:inline-block;padding:.2rem .55rem;border:1px solid var(--bd);border-radius:3px;text-decoration:none;color:var(--acc);background:#f6f6fa}
 nav a.active{background:var(--acc);color:#fff;border-color:var(--acc)}
 .note{border-left:3px solid var(--warn);background:#fffaf0;padding:.6rem .8rem;margin:.6rem 0;color:#5a3a00}
@@ -28,7 +32,27 @@ nav a.active{background:var(--acc);color:#fff;border-color:var(--acc)}
 .kv{display:grid;grid-template-columns:max-content 1fr;gap:.1rem .8rem;margin:.4rem 0}
 .kv dt{color:var(--mut)}
 .kv dd{margin:0}
-img.chart{display:block;max-width:100%;margin:.4rem 0 1rem}
+img.chart{display:block;max-width:100%;margin:.4rem auto 1rem}
+.page-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.page-head h1{margin:.2rem 0 .4rem}
+.logo{font-weight:800;font-size:1.35rem;line-height:1;letter-spacing:-.01em;user-select:none;white-space:nowrap;text-decoration:none}
+.logo:hover .a{color:var(--acc)}
+.logo .a{color:#000}
+.logo .e{font-style:italic;color:#fff;-webkit-text-stroke:1px #000;text-stroke:1px #000;margin-left:.15rem}
 details{margin:.2rem 0}
 summary{cursor:pointer;color:var(--acc)}
-</style></head><body><h1>B. Security</h1><nav><a class="" href="index.html">Index</a><a class="" href="transition-oct-2025-jan-2026.html">oct-2025 → jan-2026</a><a class="" href="transition-jan-2026-apr-2026.html">jan-2026 → apr-2026</a><a class="" href="principle-A.html">A. Data &amp; Privacy</a><a class="active" href="principle-B.html">B. Security</a><a class="" href="principle-C.html">C. Safety</a><a class="" href="principle-D.html">D. Reliability</a><a class="" href="principle-E.html">E. Accountability</a><a class="" href="principle-F.html">F. Society</a></nav><h2>Aggregation across transitions</h2><table><thead><tr><th>Transition</th><th>release_type</th><th>Requirement natures</th><th>Shoulds/Mays</th></tr></thead><tbody><tr><td>oct-2025 → jan-2026</td><td><span class='tag gate'>structural</span></td><td>id 8 · ed 0 · cl 0 · sub 1</td><td>28/12 → 22/12</td></tr><tr><td>jan-2026 → apr-2026</td><td><span class='tag gate'>incremental</span></td><td>id 7 · ed 2 · cl 0 · sub 0</td><td>22/12 → 23/14</td></tr></tbody></table><div class="foot">Source content: (c) 2025-2026 Caliber Labs, PBC DBA Artificial Intelligence Underwriting Company (AIUC). Tool and derived analysis: (c) 2025-2026 Baden Hughes. Sources: <a href="https://github.com/aiunderwriting/AIUC-1-Changelog">GitHub changelog</a>, <a href="https://www.aiuc-1.com/changelog">website changelog</a>. Built with aiuc1explorer 0.1.0.dev0.</div></body></html>
+.intro{font-size:1.02rem;color:#333;margin:.6rem 0 1rem}
+.nav-row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.25rem 0}
+.nav-row .lbl{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;margin-right:.2rem}
+.nav-rows{margin:.5rem 0 1.2rem}
+.srclinks{font-size:.9rem;color:var(--mut);margin:.4rem 0 1rem}
+.srclinks a{margin-right:.8rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem;margin:.8rem 0 1.4rem}
+.card{border:1px solid var(--bd);border-radius:6px;padding:.6rem .75rem;background:#fafafd}
+.card .n{font-size:1.55rem;font-weight:600;line-height:1.1;color:var(--acc);font-variant-numeric:tabular-nums}
+.card .l{font-size:.78rem;color:var(--mut);margin-top:.15rem;text-transform:uppercase;letter-spacing:.03em}
+.card .sub{font-size:.78rem;color:var(--mut);margin-top:.2rem}
+.card.warn .n{color:var(--warn)}
+.card.bad  .n{color:var(--bad)}
+.card.ok   .n{color:var(--ok)}
+</style></head><body><header class="page-head"><h1>B. Security</h1><a class="logo" href="index.html" aria-label="AIUC-1 Explorer — home"><span class="a">AIUC-1</span><span class="e">explorer</span></a></header><nav class="nav-rows"><div class="nav-row"><a class="" href="index.html">Index</a></div><div class="nav-row"><span class="lbl">Incremental changes:</span><a class="" href="transition-jan-2026-apr-2026.html">jan-2026 → apr-2026</a><a class="" href="transition-oct-2025-jan-2026.html">oct-2025 → jan-2026</a></div><div class="nav-row"><span class="lbl">Principles:</span><a class="" href="principle-A.html">A. Data &amp; Privacy</a><a class="active" href="principle-B.html">B. Security</a><a class="" href="principle-C.html">C. Safety</a><a class="" href="principle-D.html">D. Reliability</a><a class="" href="principle-E.html">E. Accountability</a><a class="" href="principle-F.html">F. Society</a></div></nav><section class="intro"><p>This page summarises how the <b>Security</b> principle of AIUC-1 has changed across each release transition. Requirements under this principle carry IDs beginning with <code>B</code> (for example <code>B001</code>, <code>B002</code>).</p><p>For each transition, the table below shows how many requirements in this principle were unchanged versus changed (split by the <i>nature</i> of the change: editorial, clarification or substantive), and how the count of should and may control activities under those requirements moved. The release type indicates whether the transition was an incremental refresh or a structural rewrite.</p></section><h2>Incremental changes</h2><table class="center"><thead><tr><th>Transition</th><th>Release type</th><th class=r>Identical</th><th class=r>Editorial</th><th class=r>Clarification</th><th class=r>Substantive</th><th>Should / May controls</th></tr></thead><tbody><tr><td>jan-2026 → apr-2026</td><td><span class='tag gate'>incremental</span></td><td class=r>7</td><td class=r>2</td><td class=r>0</td><td class=r>0</td><td>22/12 → 23/14</td></tr><tr><td>oct-2025 → jan-2026</td><td><span class='tag gate'>structural</span></td><td class=r>8</td><td class=r>0</td><td class=r>0</td><td class=r>1</td><td>28/12 → 22/12</td></tr></tbody></table><p class="mut">Identical / editorial / clarification / substantive counts use the same definitions as on the per-transition pages. Should / may columns show <i>prev → cur</i> totals of normative (should) and informative (may) control activities across all requirements in this principle.</p><div class="foot">Source content: (c) 2025-2026 Caliber Labs, PBC DBA Artificial Intelligence Underwriting Company (AIUC). Tool and derived analysis: (c) 2025-2026 Baden Hughes. Sources: <a href="https://github.com/aiunderwriting/AIUC-1-Changelog">GitHub changelog</a>, <a href="https://www.aiuc-1.com/changelog">website changelog</a>. Built with aiuc1explorer 0.1.0.dev0.</div></body></html>
